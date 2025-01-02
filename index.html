@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>H&S RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!--jquery-->
+<script>
+    $(document).ready(function(){
+        $(".b3").click(function(){
+            alert("your order is booking.thankyou!")
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".b1").click(function(){
+            alert("Your order is booking.Thankyou!")
+        })
+    })
+</script>
+<!--javascript-->
+<script>
+    function msg(){
+        alert("your table is booked successful.Thankyou!")
+    }
+</script>
+<script>
+    function validateform(){
+        var name=document.myform.name.value;
+        var number=document.myform.number.value;
+        var feedback=document.myform.feedback.value;
+        var submit=document.myform.submit.value;
+        var email=document.myform.email.value;
+
+        if(name==null||name==""){
+            alert("ooops! name can't be blank");
+            return false;
+        }
+        else if(number==null||number==""){
+            alert("ooops! please enter your mobile number");
+            return false;
+        }
+        else if(feedback==null||feedback==""){
+            alert("ooops! please comment your feedback");
+        return false;
+        }
+        else if(email==null ||email==""){
+            alert("ooops! please enter your email")
+        }
+        if(submit){
+            alert("your feedback is submited!");
+            return true;
+        }
+    }
+</script>
+<body>
+    <div id="home">
+    <nav class="navbar">
+    <div class="logo">H&S</div>
+    <div class="nav">
+        <ul>
+            <li><a href="#home" aria-selected="">HOME</a></li>
+            <li class="dd">
+                <a href="#" class="dbtn">MENU</a>
+                <div class="dcnt">
+                    <a href="#coffe">COFFE</a>
+                    <a href="#tea">TEA</a>
+                    <a href="#veg">VEG</a>
+                    <a href="#non-veg">NON-VEG</a>
+                </div>
+            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#feedbak">FEEDBACK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="home">
+    <img class="image1" src="food.png" alt="" width="400px" height="400px">
+    <h1 class="welcome">
+       <span> H&S</SPAn><BR>
+        WELCOME TO <BR>
+         THE <span><u>RESTAURANT</u></span></h1>
+        <P class="words">"Step into Restaurant and savor the taste!
+            Our chefs have crafted a menu to delight your senses.<br>
+            Relax and enjoy the ambiance!","Dine with us and make memories!
+            Share laughter, savor moments.<br>
+            <span>#DineWithUs #MemoriesMade"</span></P>
+</div>
+<div class="buttons">
+    <button class="b1">ORDER NOW!</button><button class="b2" onclick="msg()">BOOKING TABLE</button>
+</div>
+<marquee behavior="continue" direction="">25% offer for booking table - 25% offer for booking table</marquee>
+<br>
+<div id="menu">
+    <h1 id="coffe">MENU</h1>
+    <table class="t1">
+        <tr>
+        <td>
+            <img src="coffe 1.png" alt="" width="200px" height="200px">
+            <p><b>COFFE</b></p>
+            <p>soft and strong normal coffe</p>
+            <p>Rs.29.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="espresso.png" alt="" width="200px" height="200px">
+            <p><b>ESPRESSO</b></p>
+            <p>Strong concentrated,coffe</p>
+            <p>Rs.49.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="cappuccino(2).png" alt="" width="200px" height="200px">
+            <p><b>CAPPUCCINO</b></p>
+            <p>Steamed milk coffe</p>
+            <p>Rs.69.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="drip coffe.png" alt="" width="200px" height="200px">
+            <p><b>DRIP COFFE</b></p>
+            <p>Using drip coffe maker</p>
+            <p>Rs.69.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+    </tr>
+    </table>
+    <div class="tea">
+        <h1 id="tea">TEA</h1>
+        <table class="t1">
+            <tr>
+            <td>
+                <img src="black tea.png" alt="" width="200px" height="200px">
+                <p><b>BLACK TEA</b></p>
+                <p>Strong flavor</p>
+                <p>Rs.29.00</p>
+                <br>
+                <button class="b3">Order now!</button>
+            </td>
+            <td>
+                <img src="green tea.png" alt="" width="200px" height="200px">
+                <p><b>GREEN TEA</b></p>
+                <p>Steamed or psn-fried,light tea</p>
+                <p>Rs.49.00</p>
+                <br>
+                <button class="b3">Order now!</button>
+            </td>
+            <td>
+                <img src="herbal tea.png" alt="" width="200px" height="200px">
+                <p><b>HERBAL TEA</b></p>
+                <p>Not made from tea leaves,from fruits</p>
+                <p>Rs.69.00</p>
+                <br>
+                <button class="b3">Order now!</button>
+            </td>
+            <td>
+                <img src="chai.png" alt="" width="200px" height="200px">
+                <p><b>CHAI</b></p>
+                <p>Using drip coffe maker</p>
+                <p>Rs.29.00</p>
+                <br>
+                <button class="b3">Order now!</button>
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+<div class="veg">
+    <h1 id="veg">VEG</h1>
+    <table class="t1">
+        <tr>
+        <td>
+            <img src="idly.png" alt="" width="200px" height="200px">
+            <p><b>IDLY WITH VADA</b></p>
+            <p>soft and smooth idly</p>
+            <p>Rs.49.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="dosa.png" alt="" width="200px" height="200px">
+            <p><b>DOSA WITH SAMBAR</b></p>
+            <p>Crispy and spicy sambar</p>
+            <p>Rs.69.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="poori.png" alt="" width="200px" height="200px">
+            <p><b>POORI WITH MASALA</b></p>
+            <p>Tasty and crispy roasted peace</p>
+            <p>Rs.40.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="full meals.png" alt="" width="200px" height="200px">
+            <p><b>FULL MEALS</b></p>
+            <p>White rice,sambar with kootu</p>
+            <p>Rs.99.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+    </tr>
+    </table>
+</div>
+<div id="non-veg">
+    <h1 class="nveg">NON-VEG</h1>
+    <table class="t1">
+        <tr>
+        <td>
+            <img src="biriyani.png" alt="" width="200px" height="200px">
+            <p><b>CHICKEN BIRIYANI</b></p>
+            <p>Spicy and full chicken biriyani</p>
+            <p>Rs.119.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="mutton biriyani.png" alt="" width="200px" height="200px">
+            <p><b>MUTTON BIRIYANI</b></p>
+            <p>spicy and mutton biriyani</p>
+            <p>Rs.179.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="pepper chicken.png" alt="" width="200px" height="200px">
+            <p><b>PEPPER CHICKEN</b></p>
+            <p>Spicy and gravy pepper chicken</p>
+            <p>Rs.129.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="gril chicken.png" alt="" width="200px" height="200px">
+            <p><b>GRILLED CHICKEN</b></p>
+            <p>Dry and spicy grill chicken</p>
+            <p>Rs.299.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+    </tr>
+    </table>
+    <table class="t1">
+        <tr>
+        <td>
+            <img src="fish fry.png" alt="" width="200px" height="200px">
+            <p><b>FISH FRY</b></p>
+            <p>Roasted and spicy fish fry</p>
+            <p>Rs.119.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="chicken soop.png" alt="" width="200px" height="200px">
+            <p><b>CHICKEN SOOP</b></p>
+            <p>Spicy and hot chicken soop masala</p>
+            <p>Rs.69.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="chicken tandoori.png" alt="" width="200px" height="200px">
+            <p><b>TANDOORI CHICKEN</b></p>
+            <p>Full roasted chicken with spicy taste</p>
+            <p>Rs.499.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+        <td>
+            <img src="hyderabad biriyani.png" alt="" width="200px" height="200px">
+            <p><b>HYDERABAD BIRIYANI</b></p>
+            <p>taste like a spicy and cooked chicken</p>
+            <p>Rs.299.00</p>
+            <br>
+            <button class="b3">Order now!</button>
+        </td>
+    </tr>
+    </table>
+</div>
+<div class="about">
+    <h1 id="about">ABOUT</h1>
+    <div class="history">
+        <h1 class="hh">HISTORY</h1>
+        <p class="hpara">The history of restaurants dates back to ancient times, with evidence of public eateries in ancient Rome and China. The first modern restaurant, as we know it today, appeared in Paris in 1765, when a man named Boulanger served "restaurants" (restorative broths). By the late 18th century, more formal dining establishments emerged in Paris, leading to the French Revolution spreading the concept. The 19th century saw the rise of luxury restaurants, like Delmonico's in New York. The 20th century introduced fast food with White Castle in 1921. Chains like McDonald's revolutionized dining in the 1950s. Today, restaurants range from fine dining to fast-casual worldwide.</p>
+    </div>
+    <div class="mission">
+        <h1 class="hm">MISSION</h1>
+        <p class="mpara">"Our mission is to create an unforgettable dining experience by offering delicious, high-quality cuisine made from the freshest ingredients. We are dedicated to providing exceptional service in a warm, welcoming atmosphere. Our goal is to celebrate diverse flavors and culinary traditions while prioritizing sustainability and locally sourced produce. We aim to be a gathering place where guests feel valued and connected. Through our passion for food and hospitality, we strive to exceed expectations. We believe in nurturing a sense of community. Together, we create moments worth savoring."</p>
+    </div>
+</div>
+<div id="feedbak">
+    <h1 class="fhead">FEEDBACK</h1>
+    <div class="form1">
+        <form name="myform" method="post" onsubmit="validateform()">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" placeholder="name" name="name"><br>
+        <br>
+        <label for="email">Enter your E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="E-mail"><br>
+        <br>
+        <label for="number">Enter your number:</label><br>
+        <input type="tele" id="number" placeholder="123-456-789" name="number"><br>
+        <br>
+        <label for="feedbak">Feedback:</label><BR>
+        <textarea name="feedback" id="feedback" rows="10" cols="40"></textarea><br>
+        <br>
+        <center>
+        <input type="submit" value="submit" id="submit">
+    </center>
+</form>
+</div>
+
+
+<div id="contact">
+    <div class="main">
+    <div class="container1">
+        <center>
+        <h1 class="ch">CONTACT</h1>
+    </center>
+        <div class="cpara">
+        <p>NAME: <span>H&S RESTAURANT</span></p><br>
+        <P>MOBILE NUMBER: <span>99887766</span></P><br>
+        <P>E-MAIL: <span>h&spicytn41@gmail.com</span></P><br>
+        <p>MANAGER: <span>xyxyxyxy</span></p>
+    </div>
+
+    </div>
+    <div class="container2">
+        <h1 class="fus">FOLLOW US</h1>
+        <center>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </center>
+    </div>
+    <div class="container3">
+        <center>
+        <h1>ADDRESS</h1>
+        <div class="adpara">
+           <p> A1 police stasion oposite,</p>
+            <br>
+            <p>2nd street,</p>
+            <br>
+            <p>udumalai road,</p>
+            <br>
+            <p>pollachi-642001.</p>
+            <br>
+        </div>
+    </center>
+    </div>
+    <div class="container4">
+        <center>
+        <h1>MENU</h1>
+        <div class="mepara">
+        <P>COFFE</P><br>
+        <P>TEA</P><br>
+        <P>VEG</P><br>
+        <P>NON-VEG</P><br>
+    </center>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
